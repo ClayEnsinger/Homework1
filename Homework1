@@ -1,0 +1,32 @@
+#This takes the current date
+current_month = int(input("Please enter the month: "))
+current_day = int(input("Please enter the day: "))
+current_year = int(input("Please enter the Year: "))
+#This takes the input for your birthday month
+Birthday_month = int(input("Please enter your birthday month: "))
+Birthday_day = int(input("Please enter your birthday day: "))
+Birthday_year = int(input("Please enter your birthday year: "))
+#Printing the current date
+print("Birthday Calculator")
+print("Current date")
+print("Month:",current_month)
+print("Day:",current_day)
+print("Year:",current_year)
+#Printing your birthday
+print("Birthday")
+print("Month:",Birthday_month)
+print("Day:",Birthday_day)
+print("Year:",Birthday_year)
+
+#this calculates the age from months and days
+age = current_year - Birthday_year
+if current_month < Birthday_month:
+    age -= 1
+elif current_month == Birthday_month and current_day < Birthday_day:
+    age -=1
+print("You are",age,'years old.')
+
+#this is the command that prompts for the happy birthday
+if current_month == Birthday_month and current_day == Birthday_day:
+    print("Happy Birthday!")
+
